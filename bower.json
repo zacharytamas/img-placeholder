@@ -8,6 +8,13 @@
         "polymer",
         "web-components"
     ],
+    "authors": [
+        "Zachary Jones <zacharytamas@gmail.com>"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/zacharytamas/img-placeholder.git"
+    },
     "ignore": [
         "**/.*",
         "node_modules",
