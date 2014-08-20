@@ -1,0 +1,19 @@
+{
+    "name": "img-placeholder",
+    "version": "1.0.0",
+    "description": "Easily insert placeholder images in your HTML pages using Polymer and web components.",
+    "license": "MIT",
+    "main": "dist/img-placeholder.html",
+    "keywords": [
+        "polymer",
+        "web-components"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components"
+    ],
+    "dependencies": {
+        "polymer": "Polymer/polymer#~0.3.3"
+    }
+}

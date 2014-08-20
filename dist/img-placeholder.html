@@ -1,0 +1,58 @@
+<link rel="import" href="../../polymer/polymer.html">
+
+<polymer-element name="img-placeholder"
+  attributes="width height src alt class">
+
+  <template>
+    <img src="http://placehold.it/{{ generatedSrc }}"
+         class="{{ class }}"
+         width="{{ width }}"
+         height="{{ height }}"
+         alt="{{ alt }}">
+  </template>
+
+  <script>
+    Polymer('img-placeholder', {
+
+      // Defaults
+      width: 256,
+      height: null,
+
+      // generatedSrc: null,
+
+      computed: {
+        generatedSrc: 'calculateSrc(width, height, src, alt)'
+      },
+
+      calculateSrc: function () {
+
+        var extension = '.gif',
+            srcArray = [];
+
+        // If no height is provided, make the image square.
+        if (! this.height) {
+          this.height = this.width;
+        }
+
+        // If a `src` attribute is supplied, mostly throw it away,
+        // but use it to find the image extension used.
+        if (this.src) {
+          extension = this.src.slice(this.src.lastIndexOf('.'));
+        }
+
+        srcArray.push(this.width, 'x', this.height, extension);
+
+        // If an `alt` attribute is supplied, use it as text for
+        // the image.
+        if (this.alt) {
+          srcArray.push('&text=' + encodeURIComponent(this.alt));
+        }
+
+        return srcArray.join('');
+
+      }
+
+    });
+  </script>
+
+</polymer-element>

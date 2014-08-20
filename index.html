@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>&lt;img-placeholder&gt;</title>
+
+  <script src="bower_components/platform/platform.js"></script>
+
+  <link rel="import" href="src/img-placeholder.html">
+
+</head>
+<body>
+
+  <h2>Default</h2>
+  <img-placeholder></img-placeholder>
+
+  <h2>Specifying height and width</h2>
+  <img-placeholder width="320" height="240"></img-placeholder>
+
+  <h2>If height is missing, image becomes square.</h2>
+  <img-placeholder width="320"></img-placeholder>
+
+  <h2>Specifying alt text will display it on the image</h2>
+  <img-placeholder width="320" alt="Profile picture"></img-placeholder>
+
+</body>
+</html>
