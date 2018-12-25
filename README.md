@@ -1,5 +1,7 @@
 # &lt;img-placeholder&gt;
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zacharytamas/img-placeholder.svg)](https://greenkeeper.io/)
+
 > Easily insert placeholder images in your HTML pages using Polymer and web components.
 
 Originally by [Zachary Jones](http://github.com/zacharytamas). Uses [Placehold.it](http://placehold.it/) for the placeholder images.
