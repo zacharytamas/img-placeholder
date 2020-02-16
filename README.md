@@ -1,5 +1,7 @@
 # &lt;img-placeholder&gt;
 
+> **DEPRECATED:** This component is based on a very old version of Polymer and is no longer being updated.
+
 > Easily insert placeholder images in your HTML pages using Polymer and web components.
 
 Originally by [Zachary Jones](http://github.com/zacharytamas). Uses [Placehold.it](http://placehold.it/) for the placeholder images.
